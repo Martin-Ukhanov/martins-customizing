@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin's Customizing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./menu.js" defer></script>
+  </head>
+  <body class="relative bg-white text-black" style="min-width: 350px">
+    <!-- Header -->
+    <header
+      class="w-full p-8 absolute top-0 left-0 flex justify-between items-center">
+      <a href="">
+        <img src="./images/logo.png" alt="Logo" class="w-32" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-x-8">
+        <a href="#about-us" class="hover:text-orange transition-colors"
+          >ABOUT US</a
+        >
+        <a href="" class="hover:text-orange transition-colors">OUR TEAM</a>
+        <a href="" class="hover:text-orange transition-colors">SERVICES</a>
+        <a
+          href=""
+          class="px-8 py-4 rounded-md font-bold bg-red hover:bg-orange text-white transition-colors"
+          >CONTACT</a
+        >
+      </nav>
+      <button id="open-menu-btn" class="lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-12 fill-black">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </button>
+    </header>
+    <!-- Menu -->
+    <menu
+      class="lg:hidden w-full h-full fixed top-0 left-0 translate-x-full flex justify-center items-center bg-white transition-transform">
+      <button id="close-menu-btn" class="absolute top-10 right-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="w-12 fill-black">
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+        </svg>
+      </button>
+      <nav class="flex flex-col items-center gap-y-8">
+        <a href="#about-us" class="hover:text-orange transition-colors"
+          >ABOUT US</a
+        >
+        <a href="" class="hover:text-orange transition-colors">OUR TEAM</a>
+        <a href="" class="hover:text-orange transition-colors">SERVICES</a>
+        <a
+          href=""
+          class="px-8 py-4 rounded-md font-bold bg-red hover:bg-orange text-white transition-colors"
+          >CONTACT</a
+        >
+      </nav>
+    </menu>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="">
+        <img
+          src="./images/storefront.jpg"
+          alt="Storefront"
+          class="w-full object-cover"
+          style="height: 600px" />
+      </section>
+      <!-- About Us -->
+      <section id="about-us" class="flex flex-col lg:flex-row">
+        <div
+          class="p-8 flex-1 flex flex-col justify-center items-start gap-y-4">
+          <h1 class="text-4xl font-bold">ABOUT US</h1>
+          <p>
+            Since December 1979 our valued customers and insurance companies
+            have trusted Martin's Customizing with their automotive repairs.
+            Quality workmanship met with fair estimates are two reasons our
+            customers are continually satisfied and often bring their vehicles
+            back time and time again. Whether your vehicle has been in an
+            accident, has scratches, rust spots or has been stored away for
+            years, we offer a wide range of auto body repair services that will
+            restore your vehicle and get you back on the road safely.
+          </p>
+          <p>
+            As a family-owned business, we take pride in our work. The quality
+            of our service is as important to us, as it is to you!
+          </p>
+          <a
+            href=""
+            class="underline font-bold hover:text-orange transition-colors"
+            >Drop in for a free estimate today!</a
+          >
+        </div>
+        <div class="flex-1">
+          <img
+            src="./images/car.jpg"
+            alt="Car"
+            class="w-full h-full object-cover" />
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="p-8 flex justify-center text-center bg-black text-white">
+      <p>Copyright © 2023 Martin's Automotive</p>
+    </footer>
+  </body>
+</html>
